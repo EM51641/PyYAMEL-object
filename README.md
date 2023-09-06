@@ -1,6 +1,5 @@
 # Simplify how you read configuration files using PyYAML
-
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![codecov](https://codecov.io/gh/EM51641/PyYAMEL-object/graph/badge.svg?token=OxgVmDwXah)](https://codecov.io/gh/EM51641/PyYAMEL-object)  [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 
 Having a ```service.yaml``` file such:
