@@ -1,0 +1,13 @@
+data:
+  version: '1.0.0'
+  name: 'test'
+  description: 'it is a test'
+
+  api_key:
+    facebook: '1234567890'
+    twitter: '1224567897'
+
+  scope: ['read', 'write']
+
+metadata:
+  created_at: '09/05/2023'
