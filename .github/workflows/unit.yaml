@@ -13,9 +13,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ['3.9.18', '3.10.13', '3.11.5' ]
 
     env:
       POETRY_NO_INTERACTION: 1
@@ -24,10 +21,10 @@ jobs:
     steps:
       # Downloads a copy of the code in your repository before running CI tests
       - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: '3.11.5'
 
       - name: Install Poetry
         uses: snok/install-poetry@v1
