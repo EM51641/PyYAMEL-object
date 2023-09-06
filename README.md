@@ -1,6 +1,9 @@
 # Simplify how you read configuration files using PyYAML
 
-Having a service.yaml file such:
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+
+Having a ```service.yaml``` file such:
 ```yaml
 service:
     version: 1.0.0
