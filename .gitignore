@@ -162,4 +162,5 @@ cython_debug/
 #vscode
 .vscode/
 *.ipynb
+*.lock
 !exemple/exemple.ipynb
