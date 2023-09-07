@@ -1,6 +1,15 @@
 # Simplify how you read configuration files using PyYAML
 [![codecov](https://codecov.io/gh/EM51641/PyYAMEL-object/graph/badge.svg?token=OxgVmDwXah)](https://codecov.io/gh/EM51641/PyYAMEL-object)  [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![PyPI](https://img.shields.io/pypi/v/pyaml-object)](https://pypi.org/project/pyaml-object) [![Python](https://img.shields.io/pypi/pyversions/pyaml-object)](https://pypi.org/project/pyaml-object) [![Unit Tests](https://github.com/EM51641/PyYAMEL-object/actions/workflows/unit.yaml/badge.svg)](https://github.com/EM51641/PyYAMEL-object/actions/workflows/unit.yaml)
 
+## Installation
+
+The library is available on PyPI and can be installed using pip:
+
+```bash
+pip install pyaml-object
+```
+
+## Usage
 
 Having a ```service.yaml``` file such:
 ```yaml
@@ -13,7 +22,7 @@ service:
 We can read the config file through the Config API by applying the read method.
 
 ```python
-from pyyaml_object.config import Config
+from pyyaml_object import Config
 conf_manager = Config('service.yaml')
 conf = conf_manager.read()
 ```
