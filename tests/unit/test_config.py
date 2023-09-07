@@ -1,5 +1,6 @@
 from typing import Generator
-from pyyaml_object.config import Config, EmptyFileError
+from pyyaml_object import Config
+from pyyaml_object.config import EmptyFileError
 from unittest.mock import Mock, patch
 from pyyaml_object.utils import Node
 import pytest
@@ -39,7 +40,7 @@ class TestConfig:
             yield _yaml_module
 
     def test_config_property(self) -> None:
-        assert self._config_manager.filename == "test.yaml"
+        assert self._config_manager.filepath == "test.yaml"
 
     def test_config_read_method_sucess(self) -> None:
         conf = self._config_manager.read(self._root_node)
@@ -59,3 +60,9 @@ class TestConfig:
 
         with pytest.raises(EmptyFileError):
             self._config_manager.read(self._root_node)
+
+    def test_str(self) -> None:
+        assert str(self._config_manager) == "Config(filepath=test.yaml)"
+
+    def test_repr(self) -> None:
+        assert repr(self._config_manager) == "Config(filepath=test.yaml)"
