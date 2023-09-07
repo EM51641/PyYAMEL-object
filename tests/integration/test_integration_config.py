@@ -1,5 +1,5 @@
 import pytest
-from pyyaml_object.config import Config
+from pyyaml_object import Config
 from data import get_path
 
 

@@ -35,6 +35,11 @@ types-PyYAML ="^6.0.12.11"
 tox = "^4.11.1"
 mypy = "^1.5.1"
 
+[tool.coverage.report]
+exclude_also = [
+    "if TYPE_CHECKING:",
+    ]
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
