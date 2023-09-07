@@ -130,6 +130,12 @@ class Config:
             else:
                 setattr(root, x, data[x])
 
+    def __str__(self) -> str:
+        return f"Config(filepath={self.filepath})"
+
+    def __repr__(self) -> str:
+        return f"Config(filepath={self.filepath})"
+
 
 class EmptyFileError(Exception):
     """

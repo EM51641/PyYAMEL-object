@@ -60,3 +60,9 @@ class TestConfig:
 
         with pytest.raises(EmptyFileError):
             self._config_manager.read(self._root_node)
+
+    def test_str(self) -> None:
+        assert str(self._config_manager) == "Config(filepath=test.yaml)"
+
+    def test_repr(self) -> None:
+        assert repr(self._config_manager) == "Config(filepath=test.yaml)"
