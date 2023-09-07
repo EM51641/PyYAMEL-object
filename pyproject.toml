@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyaml-object"
-version = "2.0.1"
+version = "2.0.1-post"
 description = "Read your YAML files easily"
 authors = ["Elyes <elyesmahjoubi@gmail.com>"]
 readme = "README.md"
